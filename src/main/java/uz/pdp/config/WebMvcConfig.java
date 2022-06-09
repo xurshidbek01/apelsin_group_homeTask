@@ -35,10 +35,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
         return dataSource;
     }
 
-    @Bean
-    public StudentRepository getStudentDAO() {
-        return new StudentRepositoryImpl(getDataSource());
-    }
+    // student repository impl bolishi kerak bu yerda
+
 
 
 }
